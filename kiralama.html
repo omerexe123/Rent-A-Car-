@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Şimdi Kirala</title>
+    <link rel="stylesheet" href="kiralama.css">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <div class="container-login">
+        <div class="form-box-login">
+            <form action="#" class="LoginForm">
+                <h2>Sürücü Detayları</h2>
+                <div class="input-box-login">
+                    <input type="text" required>
+                    <label>AD*</label>
+                </div>
+                <div class="input-box-login">
+                    <input type="text" required>
+                    <label>Soyad*</label>
+                </div>
+                <div class="input-box-login">
+                    <input type="text" required>
+                    <label>Gün*</label>
+                </div>
+                <div class="input-box-login">
+                    <input type="text" required>
+                    <label>Ay*</label>
+                </div>
+                <div class="input-box-login">
+                    <input type="text" required>
+                    <label>Yıl*</label>
+                </div>
+                <div class="account-creation">
+                    <span><a href="#" class="RegisterLink" >Devam Et</a></span>
+                </div>
+            </form>
+
+            <form action="#" class="RegisterForm">
+                <h2>İletişim Bilgileri</h2>
+                <div class="input-box-login">
+                    <input type="text" required>
+                    <label>Telefon Numarası*</label>
+                </div>
+                <div class="input-box-login">
+                    <input type="text" required>
+                    <label>E-Posta Adresi*</label>
+                </div><br>
+                <div class="col-12"> 
+            
+                    <div class="checkbox"> 
+                        <input type="checkbox" id="term" name="term" class="checkbox__input" required="" data-input-submit-required="" data-bouncer-target="#i-err-term"> 
+                        <label for="term" class="checkbox__label"><a href="#kvkk-term" data-toggle="modal">KVKK Aydınlatma Metni</a>'ni okudum ve anladım.</label>
+                         <div id="i-err-term" class="form__error"></div>
+                        </div> <br>
+                         <div class="checkbox mt-1"> 
+                            <input type="checkbox" id="rental-conditions" name="rental_conditions" class="checkbox__input" required="" data-input-submit-required="" data-bouncer-target="#i-err-rental-conditions"> 
+                            <label for="rental-conditions" class="checkbox__label"><a title="Kiralama Koşulları" href="#conditions" data-toggle="modal">Kiralama Koşulları</a> kabul ediyorum .</label> 
+                            <div id="i-err-rental-conditions" class="form__error">
+                            </div>
+                        </div> 
+                    </div>
+                <div class="btn">
+                    <a href="/ödeme.html" target="_blank">
+                       <input type="button" value="Devam Et">
+                    </a>
+                </div>
+                <div class="account-creation">
+                    <span><a href="#" class="LoginLink">Geri Dön</a></span>
+                </div>
+            </form>
+
+
+        </div>
+    </div>
+
+    <script>
+        const LoginForm = document.querySelector('.LoginForm');
+        const RegisterForm = document.querySelector('.RegisterForm');
+        const RegisterLink = document.querySelector('.RegisterLink');
+        const LoginLink = document.querySelector('.LoginLink');
+        RegisterLink.onclick=()=>{
+            RegisterForm.classList.add('active');
+            LoginForm.classList.add('active');
+        }
+        LoginLink.onclick=()=>{
+            RegisterForm.classList.remove('active');
+            LoginForm.classList.remove('active');
+        }
+    </script>
+</body>
+</html>

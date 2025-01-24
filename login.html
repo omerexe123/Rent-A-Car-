@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş Yap</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <div class="container-login">
+        <div class="form-box-login">
+            <form action="#" class="LoginForm">
+                <h2>Giriş Yap</h2>
+                <div class="input-box-login">
+                    <input type="text" required>
+                    <label>Kullanıcı Adı</label>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box-login">
+                    <input type="password" required>
+                    <label>Şifre</label>
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+                <div class="forget-section-login">
+                    <p>
+                        <input type="checkbox" name="" id="">
+                        Beni hatırla
+                    </p>
+                    <a href="">Şifrenizi mi unuttunuz ?</a>
+                </div>
+                <button class="btn">Giriş Yap</button>
+                <div class="account-creation">
+                    <span>Hesabınız yok mu? <a href="#" class="RegisterLink" >Kayıt Ol</a></span>
+                </div>
+            </form>
+
+            <form action="#" class="RegisterForm">
+                <h2>Kayıt Ol</h2>
+                <div class="input-box-login">
+                    <input type="text" required>
+                    <label>Kullanıcı Adı</label>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box-login">
+                    <input type="password" required>
+                    <label>Şifre</label>
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+                <div class="input-box-login">
+                    <input type="password" required>
+                    <label>Şifreyi Doğrulayınız</label>
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+                <button class="btn">Kayıt Ol</button>
+                <div class="account-creation">
+                    <span>Zaten bir hesabınız var mı ? <a href="#" class="LoginLink">Giriş Yap</a></span>
+                </div>
+            </form>
+
+
+        </div>
+    </div>
+
+    <script>
+        const LoginForm = document.querySelector('.LoginForm');
+        const RegisterForm = document.querySelector('.RegisterForm');
+        const RegisterLink = document.querySelector('.RegisterLink');
+        const LoginLink = document.querySelector('.LoginLink');
+        RegisterLink.onclick=()=>{
+            RegisterForm.classList.add('active');
+            LoginForm.classList.add('active');
+        }
+        LoginLink.onclick=()=>{
+            RegisterForm.classList.remove('active');
+            LoginForm.classList.remove('active');
+        }
+    </script>
+</body>
+</html>

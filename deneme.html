@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <div class="container">
+        <form action="https://www.sixt.com.tr/form-sender" method="post" class="form" data-validation="true"
+        onsubmit="return true;" novalidate>
+            <div class="user details">
+                <div class="input-box">
+                    <span class="details">Şirket İsmi</span>
+                    <input type="text" placeholder="Şirket ismi giriniz" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Firma Adresi</span>
+                    <input type="text" placeholder="Firma Adresi giriniz" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Vergi Dairesi</span>
+                    <input type="text" placeholder="Vergi Dairesi giriniz" required>
+                </div>                        
+                <div class="input-box">
+                    <span class="details">Vergi Numarası </span>
+                    <input type="text" placeholder="Vergi Numarası giriniz" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Çalışan Sayısı </span>
+                    <input type="text" placeholder="Çalışan Sayısı giriniz" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Yetkili İsim</span>
+                    <input type="text" placeholder="Yetkili İsim giriniz" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">E-Posta </span>
+                    <input type="text" placeholder="E-Posta giriniz" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Telefon Numarası</span>
+                    <input type="text" placeholder="Telefon numarası giriniz" required>
+                </div>
+            
+            <div class="gender-details">
+                <input type="radio" name="cinsiyet" id="dot-1">
+                <input type="radio" name="cinsiyet" id="dot-2">
+                <input type="radio" name="cinsiyet" id="dot-3">
+                <span class="gender-title">Cinsiyet</span>
+                <div class="category">
+                    <label for="dot-1">
+                        <span class="dot one"></span>
+                        <span class="gender">Erkek</span>
+                    </label>
+                    <label for="dot-2">
+                        <span class="dot one"></span>
+                        <span class="gender">Kadın</span>
+                    </label>
+                    <label for="dot-3">
+                        <span class="dot one"></span>
+                        <span class="gender">Seçmek İstemiyorum</span>
+                    </label>
+                </div>
+            </div>
+            <div class="button">
+                <input type="submit" value="Gönder">
+            </div>
+            </div>
+        </form>
+     </div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;box-sizing: border-box;
+    font-family: "poppins";
+    color: #fff;
+}
+body{
+    background: url(/Ekran\ Resmi\ 2024-05-27\ 02.41.23.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-login{
+    height: 750px;
+    width: 850px;
+    border: 2px solid rgba(255, 255, 255,.4);
+    border-radius: 10px;
+    background: rgba(0,0,0,.2);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 0 5px rgba(0,0,0,.2),
+    0 0 15px rgba(0,0,0,.2) ,
+    0 0 30px rgba(0,0,0,.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.form-box-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-box-login img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 230px;
+    left: 370px;
+}
+.sucsess{
+    position: absolute;
+    left: 300px;
+}
+.home{
+    position: absolute;
+    top: 450px;
+    left: 385px;
+}
+
+/* RESPONSİVE */
+@media(max-width:768px){
+    .container-login{
+        height: 500px;
+        width: 380px;
+    }
+    .container-login .form-box-login h4{
+        font-size: 32px;
+    }
+}
+
+@media(max-width:480px){
+    .container-login{
+        height: 450px;
+        width: 310px;
+    }
+    .container-login .form-box-login h4{
+        font-size: 26px;
+    }
+}
+
+@media(max-width:365px){
+    .container-login{
+        height: 420px;
+        width: 280px;
+    }
+    .container-login .form-box-login h4{
+        font-size: 24px;
+    }
+    
+}
